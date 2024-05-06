@@ -1,0 +1,85 @@
+:root {
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+
+.preview-card {
+    width: 80vw;
+    padding: 32px;
+}
+
+.preview-card_list {
+    width: 100%;
+    display: grid;
+    background: grey;
+    border-radius: 10px;
+}
+
+.preview-card_list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.preview-card_list-item:first-child {
+    background-color: var(--brightorange);
+    border-radius: 10px 10px  0 0;
+}
+
+.preview-card_list-item:first-child button {
+    color: var(--brightorange);
+}
+
+.preview-card_list-item:nth-child(2) {
+    background-color: var(--darkcyan);
+}
+
+.preview-card_list-item:nth-child(2) button {
+    color: var(--darkcyan);
+}
+
+.preview-card_list-item:nth-child(3) {
+    background-color: var(--verydarkcyan);
+}
+
+.preview-card_list-item:nth-child(3) button {
+    color: var(--verydarkcyan);
+}
+
+.preview-card_list-item div:first-of-type {
+    margin: 10px 0;
+}
+
+.preview-card_list-item div,
+.preview-card_list-item h2,
+.preview-card_list-item p {
+    margin-bottom: 20px;
+}
+
+.preview-card_card-item button {
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
